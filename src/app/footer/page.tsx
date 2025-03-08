@@ -1,14 +1,15 @@
 import Link from 'next/link'
 
 import { Main, Title } from '@/components/ui'
+import Footer from '@/components/footer'
 
-export default function Home() {
+export default function FooterPage() {
   return (
     <>
       <Main className='flex flex-col p-4'>
         <div className='flex flex-grow flex-col items-center justify-center space-y-4'>
           <Title>pwa</Title>
-          <ul className='space-y-4'>
+          <ul>
             <li>
               <Link
                 href='/links'
@@ -25,9 +26,18 @@ export default function Home() {
                 footer
               </Link>
             </li>
+            <li>
+              <Link
+                href='/notif'
+                className='text-cb-pink hover:text-cb-pink/75'
+              >
+                notif
+              </Link>
+            </li>
           </ul>
         </div>
       </Main>
+      <Footer />
     </>
   )
 }
