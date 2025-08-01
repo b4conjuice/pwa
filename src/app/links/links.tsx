@@ -40,7 +40,15 @@ export default function Links() {
                   )
                 }}
               />
-              <Button href={href} backgroundColorClassName={'bg-cb-blue'}>
+              <Button href={href} backgroundColorClassName={'bg-sword-blue'}>
+                {text}
+              </Button>
+              <Button
+                onClick={() => {
+                  window.open(href, '_blank')
+                }}
+                backgroundColorClassName={'bg-sword-blue'}
+              >
                 {text}
               </Button>
             </li>
