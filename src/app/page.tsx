@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import { Main, Title } from '@/components/ui'
+import QueryParamsTest from '@/components/query-params'
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
               </Link>
             </li>
           </ul>
+          <QueryParamsTest />
         </div>
       </Main>
     </>
