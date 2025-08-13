@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import Link from 'next/link'
 
 import { Main, Title } from '@/components/ui'
@@ -32,7 +33,10 @@ export default function Home() {
               </Link>
             </li>
           </ul>
-          <QueryParamsTest />
+
+          <Suspense fallback={<div>loading...</div>}>
+            <QueryParamsTest />
+          </Suspense>
         </div>
       </Main>
     </>
